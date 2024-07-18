@@ -1,1 +1,3 @@
-# Html css ve javascript üçlüsü ile kodladığım kendi portfolyo sitem ön görünümünü merak ediyorsanız < https://erslly.xyz/ > adresinden ulaşabilirsniz.
+
+
+Html,css ve javascript ile kodladığım portfolyo sitem, şimdilik sadece index.html'i paylaşacağım ön görünümünü merak edenler için > https://erslly.xyz/
