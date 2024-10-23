@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+RewriteRule ^home/?$ index.html [L]
+RewriteRule ^about/?$ about.html [L]
+RewriteRule ^skills/?$ skills.html [L]
+RewriteRule ^services/?$ services.html [L]
+RewriteRule ^repo/?$ repositories.html [L]
+RewriteRule ^contact/?$ contact.html [L]
