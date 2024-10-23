@@ -28,7 +28,4 @@ Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
 
 - Mobil görünüm uyumludur ama burger menü bulunmamaktadır burger menüyü kendiniz kodlamalısınız
 
-1. Bu projeyi bilgisayarınıza klonlayın:
-   ```bash
-   git clone https://github.com/erslly/erslly.xyz.git
 
