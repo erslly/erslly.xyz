@@ -1,77 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="erslly.png"/>	
+    <link rel="icon" href="erslly.jpeg" />
     <title>Repositories | Erslly</title>
 </head>
+
 <body>
+
+    <div id="loading-bar"></div>
+    <div class="cursor"></div>
+    <div class="cursor-tracker"></div>
+
     <nav>
-        
         <div class="nav-container">
-           <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-              Erdem<span> </span>
-           </div>
-           
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span> Erslly</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                        href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                        href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                        href="repositories.html">Repositories</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"><a
+                        href="contact.html">Contact</a></div>
+            </div>
 
+            <div id="menu-btn" class="menu-btn">
+                ☰
+            </div>
 
-           <div class="links">
-               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
-               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
-               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
-               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="services.html">Services</a></div>
-               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="repositories.html">Repositories</a></div>
-               <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
-       </div>
-      
-   
-   </nav>
+            <nav id="menu" class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="repositories.html">Repositories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </nav>
 
     <div class="repositories-section">
         <h1 data-aos="fade-up" data-aos-duration="1500">Repositories 📦</h1>
         <div class="repositories-container">
-            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" onclick="window.location.href='https://nettokoa.com';">
-                <h2 class="repository-title">NettoKoa</h2>
-                <p class="repository-description">Nettokoa is a hosting company that provides reliable and efficient hosting solutions for websites and applications.</p>
+            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <h2 class="repository-title">erslly.xyz</h2>
+                <p class="repository-description">Personal Website.</p>
+                <div class="repository-info">
+                    <span class="language"><i class="fas fa-code"></i> HTML</span>
+                    <span class="stars"><i class="fas fa-star"></i> 2</span>
+                </div>
+                <a href="https://github.com/erslly/erslly.xyz" target="_blank" class="repository-link"></a>
             </div>
-            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600" onclick="window.location.href='https://github.com/username/project2';">
-                <h2 class="repository-title">Manga Kütüphanesi</h2>
-                <p class="repository-description">Manga Library is a Turkish manga and webtoon reading site. It allows you to read a wide range of translated manga and webtoons for free.</p>
+            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <h2 class="repository-title">attribute-analyzer</h2>
+                <p class="repository-description">No description.</p>
+                <div class="repository-info">
+                    <span class="language"><i class="fas fa-code"></i> JavaScript</span>
+                    <span class="stars"><i class="fas fa-star"></i> 1</span>
+                </div>
+                <a href="https://github.com/erslly/attribute-analyzer" target="_blank" class="repository-link"></a>
             </div>
-            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" onclick="window.location.href='https://aniki.com.tr/';">
-                <h2 class="repository-title">Aniki</h2>
-                <p class="repository-description">Aniki is a comprehensive Discord bot developed using the latest version of Discord.js. This bot offers various functionalities to server administrators.</p>
+
+            <div class="repository-box" data-aos="fade-up" data-aos-duration="_blank" data-aos-delay="100">
+                <h2 class="repository-title"> Keyboard-AFK-Client 2</h2>
+                <p class="repository-description">No description.</p>
+                <div class="repository-info">
+                    <span class="language"><i class="fas fa-code"></i> JavaScript</span>
+                    <span class="stars"><i class="fas fa-star"></i> 1</span>
+                </div>
+                <a href="https://github.com/erslly/Keyboard-AFK-Client" target="_blank" class="repository-link"></a>
             </div>
-            <!-- Diğer kutular aynı kapsayıcıda -->
-            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" onclick="window.location.href='https://github.com/erslly/Discord-Trol';">
-                <h2 class="repository-title">Discord Trol</h2>
-                <p class="repository-description">An Application That Allows You To Change The “Playing Section” In Discord As You Like.</p>
-            </div>
-            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" onclick="window.location.href='https://github.com/erslly/secure-password-python';">
-                <h2 class="repository-title">Create Secure Password with Python</h2>
-                <p class="repository-description">With Python, you can create strong and hard-to-crack passwords.</p>
-            </div>
-            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" onclick="window.location.href='https://github.com/erslly/erslly.xyz';">
-                <h2 class="repository-title">Portfolio 1.0</h2>
-                <p class="repository-description">My Personal Website.</p>
-            </div>
-			            <div class="repository-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200" onclick="window.location.href='https://github.com/erslly/erslly.xyz';">
-                <h2 class="repository-title">Anilist Webhook Notifer</h2>
-                <p class="repository-description">This project creates a webhook that sends notifications about new anime episodes to Discord channels using the AniList API. Users are informed about upcoming episodes with a direct link to watch them.</p>
+
+            <div class="repository-box" data-aos="fade-up" data-aos-duration="_blank" data-aos-delay="100">
+                <h2 class="repository-title"> AniList-Webhook-Notifier </h2>
+                <p class="repository-description">No description.</p>
+                <div class="repository-info">
+                    <span class="language"><i class="fas fa-code"></i> JavaScript</span>
+                    <span class="stars"><i class="fas fa-star"></i> 1</span>
+                </div>
+                <a href="https://github.com/erslly/AniList-Webhook-Notifier" target="_blank"
+                    class="repository-link"></a>
             </div>
         </div>
     </div>
-    
-    </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({offset:0});
+        AOS.init({ offset: 0 });
     </script>
-    <script src="script.js"></script>
+
+    <script>
+        // Sayfa Yüklendiğinde Ses Çalma
+        const pageTransitionSound = new Audio('button.mp3');
+
+        window.addEventListener('load', function () {
+            pageTransitionSound.play();
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+
+            if (menuBtn && menu) {
+                menuBtn.addEventListener('click', function () {
+                    menu.classList.toggle('open');
+                });
+            }
+        });
+
+        // Sayfa Özel imleci
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector('.cursor');
+            const cursorTracker = document.querySelector('.cursor-tracker');
+
+            cursor.style.opacity = '0';
+            cursorTracker.style.opacity = '0';
+
+            document.addEventListener('mousemove', (e) => {
+                const x = e.pageX;
+                const y = e.pageY;
+
+                cursorTracker.style.transform = `translate(${x - 7.5}px, ${y - 7.5}px)`;
+                cursorTracker.style.opacity = '1';
+
+                setTimeout(() => {
+                    const trackerRect = cursorTracker.getBoundingClientRect();
+
+                    cursor.style.transform = `translate(${trackerRect.left - 20}px, ${trackerRect.top - 20}px)`;
+                    cursor.style.opacity = '1';
+                }, 50);
+            });
+        });
+
+        // Sayfa Yüklenme Barı
+        window.onbeforeunload = function () {
+            const loadingBar = document.getElementById('loading-bar');
+            loadingBar.style.transform = 'scaleX(1)';
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.onload = function () {
+            const loadingBar = document.getElementById('loading-bar');
+            loadingBar.style.transform = 'scaleX(1)';
+            setTimeout(function () {
+                loadingBar.style.transform = 'scaleX(0)';
+                document.body.style.overflow = 'auto';
+            }, 2000);
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+
+            if (menuBtn && menu) {
+                menuBtn.addEventListener('click', function () {
+                    menu.classList.toggle('open');
+                });
+            }
+        });
+
+            // baloncuk
+        document.addEventListener('DOMContentLoaded', () => {
+    const body = document.querySelector('body');
+
+    function createCircle() {
+        const circle = document.createElement('div');
+        circle.classList.add('circle');
+
+        const startSide = Math.floor(Math.random() * 4); 
+        let startX, startY, endX, endY;
+
+        switch (startSide) {
+            case 0: 
+                startX = Math.random() * window.innerWidth;
+                startY = -150; 
+                endX = Math.random() * window.innerWidth;
+                endY = window.innerHeight + 150; 
+                break;
+            case 1: 
+                startX = window.innerWidth + 150; 
+                startY = Math.random() * window.innerHeight;
+                endX = -150; 
+                endY = Math.random() * window.innerHeight;
+                break;
+            case 2: // Alt
+                startX = Math.random() * window.innerWidth;
+                startY = window.innerHeight + 150; 
+                endX = Math.random() * window.innerWidth;
+                endY = -150; 
+                break;
+            case 3: 
+                startX = -150; 
+                startY = Math.random() * window.innerHeight;
+                endX = window.innerWidth + 150; 
+                endY = Math.random() * window.innerHeight;
+                break;
+        }
+
+        circle.style.left = `${startX}px`;
+        circle.style.top = `${startY}px`;
+
+        const size = Math.random() * 100 + 100; 
+        circle.style.width = `${size}px`;
+        circle.style.height = `${size}px`;
+
+        circle.style.setProperty('--endX', `${endX}px`);
+        circle.style.setProperty('--endY', `${endY}px`);
+
+        const duration = Math.random() * 5 + 3; // 3-8 saniye
+        circle.style.animationDuration = `${duration}s`;
+
+        body.appendChild(circle);
+
+        setTimeout(() => circle.remove(), duration * 1000);
+    }
+
+    setInterval(createCircle, 800); 
+});
+
+    </script>
 </body>
+
 </html>
