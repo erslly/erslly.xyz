@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="erslly.png" />
+    <link rel="icon" href="erslly.jpeg" />
     <title>Skills | Erslly</title>
 </head>
 
 <body>
 
+    <div id="loading-bar"></div>
+    <div class="cursor"></div>
+    <div class="cursor-tracker"></div>
+
+
     <nav>
 
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Erdem<span> </span>
+                <span>Erslly</span>
             </div>
 
 
@@ -26,17 +31,26 @@
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
                         href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
-                        href="about.html">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
                         href="skills.html">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
-                        href="services.html">Services</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
                         href="repositories.html">Repositories</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
                         href="contact.html">Contact</a></div>
             </div>
+            <div id="menu-btn" class="menu-btn">
+                ☰
+            </div>
+
+            <nav id="menu" class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
     </nav>
 
     <section class="skills-section">
@@ -111,6 +125,78 @@
         integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script>
+        // Sayfa Yüklendiğinde Ses Çalma
+        const pageTransitionSound = new Audio('button.mp3');
+
+        window.addEventListener('load', function () {
+            pageTransitionSound.play();
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('menu');
+
+            if (menuBtn && menu) {
+                menuBtn.addEventListener('click', function () {
+                    menu.classList.toggle('open');
+                });
+            }
+        });
+
+        // Sayfa Özel imleci
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector('.cursor');
+            const cursorTracker = document.querySelector('.cursor-tracker');
+
+            cursor.style.opacity = '0';
+            cursorTracker.style.opacity = '0';
+
+            document.addEventListener('mousemove', (e) => {
+                const x = e.pageX;
+                const y = e.pageY;
+
+                cursorTracker.style.transform = `translate(${x - 7.5}px, ${y - 7.5}px)`;
+                cursorTracker.style.opacity = '1';
+
+                setTimeout(() => {
+                    const trackerRect = cursorTracker.getBoundingClientRect();
+
+                    cursor.style.transform = `translate(${trackerRect.left - 20}px, ${trackerRect.top - 20}px)`;
+                    cursor.style.opacity = '1';
+                }, 50);
+            });
+        });
+
+        // Sayfa Yüklenme Barı
+        window.onbeforeunload = function () {
+            const loadingBar = document.getElementById('loading-bar');
+            loadingBar.style.transform = 'scaleX(1)';
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.onload = function () {
+            const loadingBar = document.getElementById('loading-bar');
+            loadingBar.style.transform = 'scaleX(1)';
+            setTimeout(function () {
+                loadingBar.style.transform = 'scaleX(0)';
+                document.body.style.overflow = 'auto';
+            }, 2000);
+        };
+        document.addEventListener('DOMContentLoaded', () => {
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuBtn = document.getElementById('menu-btn');
+                const menu = document.getElementById('menu');
+
+                if (menuBtn && menu) {
+                    menuBtn.addEventListener('click', function () {
+                        menu.classList.toggle('open');
+                    });
+                }
+            });
+        });
+
+
+    </script>
     <script src="script.js"></script>
 
 </body>
