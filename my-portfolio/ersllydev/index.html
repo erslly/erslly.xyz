@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta property="og:title" content="Hey I'm erslly 👋">
+    <meta property="og:description"
+        content="Hi, I'm Erdem (Erslly), a 16-year-old software developer, working on various projects. Check out my personal website for more information!">
+    <meta property="og:image" content="https://erslly.xyz/erslly.jpeg">
+    <meta property="og:url" content="https://erslly.xyz">
+    <meta property="og:type" content="website">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -12,51 +22,70 @@
 
     <link rel="stylesheet" href="https://emoji-css.com/emoji.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
-    <link rel="icon" href="erslly.png" />
+
+
+    <link rel="icon" href="erslly.jpeg" />
 
 
     <link rel="stylesheet" href="style.css">
     <title>Erslly</title>
-    
+
 </head>
 
 <body>
+
+    <div id="loading-bar"></div>
+    <div class="cursor"></div>
+    <div class="cursor-tracker"></div>
+
+
     <nav>
-        
+
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Erdem<span> </span>
+                <span> Erslly</span>
 
             </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
                         href="index.html">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
-                        href="about.html">About</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
                         href="skills.html">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
-                        href="services.html">Services</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
                         href="repositories.html">Repositories</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
                         href="contact.html">Contact</a></div>
             </div>
 
+            <div id="menu-btn" class="menu-btn">
+                ☰
+            </div>
+
+            <nav id="menu" class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="repositories.html">Repositories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
     </nav>
     <section>
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="erslly.png" alt="">
+                <img src="erslly.jpeg" alt="">
             </div>
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Erdem 👋</span>
                 </h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span
-                        class="typewriter-text"></span></div>
-                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100">Hello , my name is erdem I am a
+                <div class="typewriter" class="typewriter-text"></span></div>
+                <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1100">Hello , my name is erdem(erslly)
+                    I am a
                     16 year old young software developer, I am preparing a good future for myself by putting forward
                     various projects..</p>
                 <div class="social-links">
@@ -64,20 +93,16 @@
                         data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.instagram.com/erdemozbebek_" target="_blank " data-aos="fade-up"
                         data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/@erdem5034" target="_blank" data-aos="fade-up"
-                        data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://x.com/ersllydev" target="_blank" data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-delay="1500"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/erdem-özbebek-981085311/" data-aos="fade-up"
                         data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <a href="https://linktr.ee/erslly" target="_blank">
-                        <button>All Links</button>
-                    </a>
-                </div>
-
             </div>
         </div>
     </section>
+
+
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -90,6 +115,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
+
+    <script>
+        const pageTransitionSound = new Audio('button.mp3');
+
+        window.addEventListener('load', function () {
+            pageTransitionSound.play();
+        });
+
+    </script>
 
 </body>
 
